@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+<style>
+    td,
+    th {
+        border: 1px solid green;
+        padding: 10px;
+    }
+
+    th {
+        background-color: green;
+        color: white;
+        border: 1px solid rgb(50, 108, 50);
+    }
+
+    table {
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    tbody>tr {
+        cursor: pointer;
+    }
+
+    tbody>tr:hover {
+        background-color: #c88585;
+        color: rgb(227, 227, 227);
+    }
+
+    tfoot td {
+        text-align: center;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #e7e7e7;
+        color: #fff;
+        text-shadow: 2px 2px 3px rgb(255,0,0), 
+        -2px -2px 5px black, 
+        -5px -3px 3px blue;
+    }
+</style>
+</head>
+
+<body>
+   
+<table>
+    <caption>Tabel Mahasiswa</caption>
+    <thead>
+        <tr>
+            <th rowspan="2">Nomor</th>
+            <th rowspan="2">Nim</th>
+            <TH colspan="3">Mahasiswa</TH>
+        <tr>
+            <th>Nama</th>
+            <th>Prodi</th>
+            <th>Alamat</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2402011035</td>
+            <td>Wadiah Syafikah</td>
+            <td>Teknik Informatika</td>
+            <td>Kerinci</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2402011037</td>
+            <td>Mirnawati</td>
+            <td>Teknik Informatika</td>
+            <td>Tebo</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2402011012</td>
+            <td>Gita Anggriani</td>
+            <td>Teknik Informatika</td>
+            <td>Muara Bungo</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">jumlah</td>
+            <td>3</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+
+
+</html>
