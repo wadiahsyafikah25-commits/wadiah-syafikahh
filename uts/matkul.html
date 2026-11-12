@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Mata Kuliah</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse; /* border tidak dobel */
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    /* warna baris ganjil dan genap */
+    tbody tr:nth-child(odd) {
+      background-color: #f1f8e9;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #c8e6c9;
+    }
+
+    /* kursor berubah dan warna berubah saat hover */
+    tbody tr {
+      cursor: pointer;
+    }
+
+    tbody tr:hover {
+      background-color: #ffcc80;
+    }
+
+    .tengah {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Daftar Mata Kuliah</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="tengah">No</th>
+        <th>Kode Matakuliah</th>
+        <th>Nama Matakuliah</th>
+        <th class="tengah">Jumlah SKS</th>
+        <th class="tengah">Semester</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tengah">1</td>
+        <td>TI101</td>
+        <td>Pemrograman Web</td>
+        <td class="tengah">3</td>
+        <td class="tengah">3</td>
+      </tr>
+      <tr>
+        <td class="tengah">2</td>
+        <td>TI102</td>
+        <td>Kecerdasan Buatan</td>
+        <td class="tengah">3</td>
+        <td class="tengah">4</td>
+      </tr>
+      <tr>
+        <td class="tengah">3</td>
+        <td>TI103</td>
+        <td>Administrasi Jaringan</td>
+        <td class="tengah">3</td>
+        <td class="tengah">4</td>
+      </tr>
+      <tr>
+        <td class="tengah">4</td>
+        <td>TI104</td>
+        <td>Pemodelan Sistem</td>
+        <td class="tengah">2</td>
+        <td class="tengah">3</td>
+      </tr>
+      <tr>
+        <td class="tengah">5</td>
+        <td>TI105</td>
+        <td>Basis Data</td>
+        <td class="tengah">3</td>
+        <td class="tengah">2</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
