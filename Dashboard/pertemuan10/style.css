@@ -1,0 +1,61 @@
+:root {
+    --sidebar-width: 260px;
+    --active-menu: linear-gradient(90deg, #1f6fd1, #4a2a9c);
+}
+
+Body {
+    font-family: "Soge UI", Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#sidebar {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    transition: margin-left var(--transition-speed) ease-in-out;
+    z-index: 1050;
+}
+
+.sidebar-nav .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.375rem;
+    margin: 0.2rem 0.75rem;
+    font-weight: 400;
+}
+
+.sidebar-nav .nav-link.active {
+    background: var(--active-menu);
+    color: #ffff;
+}
+
+.sidebar-nav .nav-link:hover {
+    background: rgb(154, 153, 153);
+    color: #ffff;
+}
+
+.sidebar-nav .menu-text{
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-nav .nav-link:not(.active):hover .menu-text {
+    transform: translateX(5px);
+}
+
+.sidebar-nav .menu-icon {
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.sidebar-nav .nav-link:not(.active):hover .menu-icon {
+    transform: rotateY(180deg);
+}
